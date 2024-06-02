@@ -16,3 +16,6 @@
     - 2d or 3d?
 - ai opponents?
 - mouse interaction
+
+## Technical considerations
+I'd like for this game to be portable, as most people don't use linux. Using an easy to transfer language would be nice, so smth like C# or Java that use their own runtimes/vm/etc would be nice.

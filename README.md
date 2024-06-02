@@ -42,9 +42,48 @@ Players go in a circle, and chooses up to 2 actions to play at a time. Note that
 - Sell Cards
     - These cards are used to exchange crops for profit, based on the rate on the card
 - Violence Cards
-    - These cards are used to inhibit your oponents, at the risk of catching heat from the DEA (accelerating time) or backfiring (hurting your own stats)
+    - These cards are used to inhibit your opponents, at the risk of catching heat from the DEA (accelerating time) or backfiring (hurting your own stats)
 
 Resolve actions on cards immediately.
 
 ### Time Phase
-Once the action phase is over, draw a time card. Process the effect on the card, and then return to the draw phase. If the "DEA ARRIVAL" card is drawn, jump to the **ENDGAME** section.
+Draw a time card and resolve actions on it. If it's the "DEA ARRIVES" card, jump to the ENDGAME section of the rules.
+
+#### Time Deck
+The Time deck represents the passage of time in the game. Since you never know when the DEA is going to arrive, you have to decide when to sell and when to wait to grow more crops first. This makes the game more suspenseful as time passes. Some time cards may have events on them that alter player stats, crop levels, or even shuffle the time deck. 
+
+## Endgame
+Once the DEA card is drawn, endgame begins. At this point, there are only 2 full turns left. Crops are worth 1.5 as much because of a plummet in supply, but choosing to sell during this phase means you lose an opportunity to purchase victory items. During this phase, players can choose to purchase a victory item from the pile instead of playing an action card. These items are worth victory points, and may include actions or requirements for their purchase. For example, an item might only be worth a few points, but give you an extra turn, or an item might be worth many points, but require your product has a very high value first. Once all turns are complete, the game ends, and scoring is conducted.
+
+# Scoring
+Victory points from victory items are tallied. Remaining crops are worth 1/2 their value and converted to money. Then, money is coverted to victory points in a 200k->1 ratio (TODO: fix this math). The player with the most points wins. 
+
+# Example cards, items, etc
+Note that a polished version would have fun descriptions and flavor texts, this is purely mechanical
+
+## Improvement cards:
+- Increase farm output by 2 if defense over 5; otherwise Increase farm output by 1
+-  increase product quality by 2 but lower resilience by 1
+- double production for this turn only (stacks)
+- improve resilience by 2 but halve production for this turn
+
+## Sell cards
+- if trust > 4 and quality > 5, rate is x. otherwise rate is y.
+- if trust > 9, rate is x. Otherwise, rate is y * quality
+- etc
+
+## Attack cards
+Note! resilience is a hidden stat, so you have to gamble when attacking sometimes.
+- halve target player's production if their resilience < 7. Lose 3 trust yourself.
+- decrease target player's quality by 1. pay x money to do this
+- steal 10 crops from target player if their resilience is 2 or more less than yours. otherwise, lose 1 resilience and x money.
+
+## Time cards
+- bountiful season, harvest an additional 2 crops
+- drought! lose 2 production rate
+- hurricane season! shuffle time deck
+
+## Victory items
+- enormous statue of yourself, +10 pts
+- offer to pay off national debts, +4 pts and take extra turn
+- build your own prison (Escobar actually did this), +6 points
